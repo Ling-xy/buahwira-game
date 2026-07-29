@@ -1,0 +1,1 @@
+window.BuahWira=window.BuahWira||{};BuahWira.Storage={key:'buahWiraStandaloneSaveV1',read(){try{return {...{lang:'zh',sound:true,high:0,unlocked:1,masterVolume:0.6},...JSON.parse(localStorage.getItem(this.key)||'{}')}}catch{return {lang:'zh',sound:true,high:0,unlocked:1,masterVolume:0.6}}},write(v){localStorage.setItem(this.key,JSON.stringify(v))}};
